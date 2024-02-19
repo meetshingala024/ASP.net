@@ -19,7 +19,7 @@ AutoEventWireup="true" CodeFile="ICard.aspx.cs" Inherits="ICard" %>
       "
     >
       <asp:ImageButton ID="imgProfile" runat="server"  
-    
+    ImageUrl="~/img/meet.jpeg"
     Height="200px" Width="170px"/>
 
 <asp:FileUpload ID="imgUpload" runat="server" Visible="false"/>
