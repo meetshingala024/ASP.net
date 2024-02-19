@@ -1,0 +1,109 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Index.master.cs" Inherits="Index" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>MY ASSIGNMENT</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+<div style="display: flex; align-items: center; display:flex; justify-content:space-between; color:White; background-color:Navy; padding:5px; border-radius: 2px;  opacity:0.8">
+    <div style="display:flex; align-items:center;">
+    <asp:Image ID="Image1" runat="server" Height="45px" Width="45px" 
+               ImageUrl="~/img/atmiya.png" style=" margin-right: 40px;"/>
+    <asp:Label ID="Label1" runat="server" Font-Bold=true Font-Size="35px" Text="ATMIYA UNIVERSITY" 
+               style=""></asp:Label>
+</div>
+<div style="" >
+        <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" 
+         DynamicHorizontalOffset="2" Font-Names="Verdana" 
+        Font-Size="1em" ForeColor="#ffffff" StaticSubMenuIndent="10px" 
+>
+            <DynamicHoverStyle BackColor="#666666" ForeColor="White" />
+            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <DynamicMenuStyle BackColor="Navy" />
+            <DynamicSelectedStyle BackColor="#1C5E55" />
+            <Items>
+                <asp:MenuItem Text="Unit 1" Value="Unit 1">
+                    <asp:MenuItem NavigateUrl="~/ICard.aspx" Text="ICard" Value="ICard">
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="RadioButton" Value="RadioButton" 
+                        NavigateUrl="~/RadioButton.aspx"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/DropDown.aspx" Text="DropDownList" 
+                        Value="DropDownList"></asp:MenuItem>
+                     <asp:MenuItem NavigateUrl="~/CheckBoxList.aspx" Text="CheckBoxList" 
+                        Value="New Item"></asp:MenuItem>
+                    <asp:MenuItem Text="Image" Value="Image" NavigateUrl="~/image_atb.aspx"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Lable.aspx" Text="Label" Value="Label">
+                    </asp:MenuItem>
+                      <asp:MenuItem NavigateUrl="~/Login.aspx" Text="Login" Value="Login">
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/ListBox.aspx" Text="ListBox" Value="ListBox">
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Litral_BullettedList.aspx" 
+                        Text="Literal_BulletList" Value="Literal_BulletList"></asp:MenuItem>
+                    
+                </asp:MenuItem>
+                <asp:MenuItem Text="Unit 2" Value="Unit 2">
+                    <asp:MenuItem NavigateUrl="~/Upload_File.aspx" Text="Upload_Image" 
+                        Value="Upload_Image"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Ad_Rotatoer.aspx" Text="AdRotator" 
+                        Value="AdRotator"></asp:MenuItem>
+                    
+                    <asp:MenuItem NavigateUrl="~/Dynamic_Control_Generator.aspx" 
+                        Text="Dynamic Control" Value="Dynamic_Control_Generator">
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Timer_Demo.aspx" Text="Timer_Demo" 
+                        Value="Timer_Demo"></asp:MenuItem>
+                        
+                    </asp:MenuItem>
+                    
+                <asp:MenuItem Text="Unit 3" Value="Unit 3"></asp:MenuItem>
+                <asp:MenuItem Text="Unit 4" Value="Unit 4"></asp:MenuItem>
+                <asp:MenuItem Text="Unit 5" Value="Unit 5"></asp:MenuItem>
+                
+            </Items>
+            <StaticHoverStyle BackColor="#666666" ForeColor="White" />
+            <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <StaticSelectedStyle BackColor="#1C5E55" />
+            <StaticItemTemplate>
+                <%# Eval("Text") %>
+            </StaticItemTemplate>
+        </asp:Menu>
+        </div>
+        </div>
+        &nbsp;
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+           
+        
+        </asp:ContentPlaceHolder>
+        
+   
+    </form>
+     <style>
+    footer {
+        background-color: #f0f0f0;
+        padding: 10px;
+        text-align: center;
+        position: fixed;
+        font-size:25px;
+        bottom: 0;
+        width: 100%;
+    }
+
+    
+</style>
+
+<footer>
+    <asp:Label ID="Label2" runat="server" Text="Created By : Meet Shingala |" ForeColor="#0066CC"></asp:Label>
+    <asp:Label ID="Label4" runat="server" Text="Class: C4 |"></asp:Label>
+    <asp:Label ID="Label3" runat="server" Text="Roll No: 52 |" ForeColor="#0066CC"></asp:Label>
+    <asp:Label ID="Label5" runat="server" Text="En.No: 210801321"></asp:Label>
+</footer>
+
+</body>
+</html>

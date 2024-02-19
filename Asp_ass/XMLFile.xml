@@ -1,0 +1,26 @@
+﻿
+<Advertisements>
+  <Ad>
+    <ImageUrl>img/openai.png</ImageUrl>
+    <NavigateUrl>https://openai.com/</NavigateUrl>
+    <AlternateText>Google Image</AlternateText>
+    <Impression>20</Impression>
+    <Keyword>google</Keyword>
+  </Ad>
+  
+  <Ad>
+    <ImageUrl>img/gemini.jpeg</ImageUrl>
+    <NavigateUrl>https://gemini.google.com/app</NavigateUrl>
+    <AlternateText>Yahoo Image</AlternateText>
+    <Impression>15</Impression>
+    <Keyword>yahoo</Keyword>
+  </Ad>
+  
+  <Ad>
+    <ImageUrl>img/bing.jpeg</ImageUrl>
+    <NavigateUrl>https://www.bing.com/</NavigateUrl>
+    <AlternateText>Firefox Image</AlternateText>
+    <Impression>10</Impression>
+    <Keyword>firefox</Keyword>
+  </Ad>
+</Advertisements>
